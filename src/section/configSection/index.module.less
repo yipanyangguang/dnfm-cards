@@ -1,0 +1,73 @@
+.configSection {
+  flex: 0 0 300px;
+  width: 300px;
+  padding: 16px;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    position: relative;
+    
+    
+    .mainImage {
+      // border: 1px solid #efeffc;
+      border-radius: 4px;
+      height: 300px;
+    }
+
+    .close {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 0;
+      right: 0;
+    }
+
+    .close:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+
+  .payButtonWrapper {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+
+  .payWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 80%;
+      border: 1px solid #efeffc;
+      border-radius: 4px;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+}
+
+.configSection::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  bottom: 32px;
+  right: 0;
+  width: 1px;
+  background-color: #efeffc;
+}
