@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "./App.module.less";
+import styles from "./app.module.less";
 import { JobEnum } from "./interface/job";
 import ConfigSection from "./section/configSection";
 import { IConfigSectionProps } from "./section/configSection/interface";
